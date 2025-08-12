@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+ssh root@nns.cs.tsinghua.edu.cn "trash-put /var/www/html/*"
+scp -r * root@nns.cs.tsinghua.edu.cn:/var/www/html
+ssh root@nns.cs.tsinghua.edu.cn "chown -R www-data:www-data /var/www/html"
